@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def anket(request):
+def hakkimizda(request):
     return HttpResponse("""
 	<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-	<title>Anket Sayfası</title>
+	<title>Hakkımızda Sayfası</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 	            <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' %}">
 
@@ -1769,9 +1769,9 @@ def anket(request):
 			<a href="/kayitol" class="site-btn"   >Kayıt Ol</a>
 			<nav class="main-menu">
 				<ul class="menu-list">
-                        <li><a href="/anket"id="active" >Anket</a></li>
+                        <li><a href="/anket" >Anket</a></li>
 					<li><a href="/piyasalar" >Piyasalar</a></li>
-					<li><a href="/hakkimizda"   >Hakkımızda</a></li>
+					<li><a href="/hakkimizda" id="active"  >Hakkımızda</a></li>
 					<li><a href="/sss"  >SSS</a></li>
 					<li><a href="https://view.forms.app/nerimantopcu/iletisim"target="_blank" >İletişim</a></li>
 				</ul>
