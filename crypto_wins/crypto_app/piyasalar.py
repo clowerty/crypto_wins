@@ -1760,13 +1760,13 @@ def piyasalar(request):
 	<!-- Header section -->
 	<header class="header-section clearfix">
 		<div class="container-fluid">
-			<a href="#" class="site-logo">
+		<a href="/ " class="site-logo">
 				<img src="https://cdn.discordapp.com/attachments/1099776572988334160/1173011092331561030/logo.png?ex=656266b5&is=654ff1b5&hm=4552100c1d8a001801e9f5ca8b23621e129b121832abdec4c62f907f94a55c19&" alt="">
 			</a>
 			<div class="responsive-bar"><i class="fa fa-bars"></i></div>
 			<a href="" class="user"><i class="fa fa-user"></i></a>
-			<a href="/girisyap" class="site-btn"  >Giriş Yap</a>
-			<a href="/kayitol" class="site-btn"   >Kayıt Ol</a>
+
+			<a href="/kayitol" class="site-btn"   >Giriş Yap</a>
 			<nav class="main-menu">
 				<ul class="menu-list">
                         <li><a href="/anket" >Anket</a></li>
@@ -1809,8 +1809,7 @@ def piyasalar(request):
 						<li><a href="#">Piyasalar</a></li>
 						<li><a href="#">Hakkımızda</a></li>
 						<li><a href="#">SSS</a></li>
-						<li><a href="#">Kayıt Ol</a></li>
-						<li><a href="#">Giriş Yap</a></li>
+						<li><a href="/ ">Giriş Yap</a></li>
 						<li><a href="https://view.forms.app/nerimantopcu/iletisim"target="_blank">İletişim</a></li>
 						<li><a href="#neriman">Abone Ol</a></li>
 					</ul>
