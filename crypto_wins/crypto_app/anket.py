@@ -1765,8 +1765,7 @@ def anket(request):
 			</a>
 			<div class="responsive-bar"><i class="fa fa-bars"></i></div>
 			<a href="" class="user"><i class="fa fa-user"></i></a>
-			<a href="/girisyap" class="site-btn"  >Giriş Yap</a>
-			<a href="/kayitol" class="site-btn"   >Kayıt Ol</a>
+			<a href="/kayitol" class="site-btn"   >Giriş Yap</a>
 			<nav class="main-menu">
 				<ul class="menu-list">
                         <li><a href="/anket"id="active" >Anket</a></li>
