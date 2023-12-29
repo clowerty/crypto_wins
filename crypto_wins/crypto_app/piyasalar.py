@@ -1769,7 +1769,7 @@ def piyasalar(request):
 			<a href="/kayitol" class="site-btn"   >Giriş Yap</a>
 			<nav class="main-menu">
 				<ul class="menu-list">
-                        <li><a href="/anket" >Anket</a></li>
+                        <li><a href="/anket" >Eğitimlerimiz</a></li>
 					<li><a href="/piyasalar" id="active" >Piyasalar</a></li>
 					<li><a href="/hakkimizda"  >Hakkımızda</a></li>
 					<li><a href="/sss"  >SSS</a></li>
@@ -1780,7 +1780,137 @@ def piyasalar(request):
 	</header>
 
 	<section class="hero-section">
-	<h3>numan BURAYI SEN YAPICAKSIN</h3>
+
+                        
+                        <style>
+
+  .scrollable-box {
+    width: 500px;
+    height: 500px;
+    overflow: auto;
+    background-color: #16d0c5;
+    color: #050303;
+    padding: 10px;
+    border-radius: 30px;
+    margin-left: 67px;
+
+  }
+  
+  .crypto-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .crypto-item:last-child {
+    border-bottom: none;
+  }
+  
+  </style>
+</head>
+<body>
+
+  <div id="crypto-container" class="scrollable-box">
+    <!-- Kripto paralar buraya dinamik olarak eklenecek -->
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const cryptocurrencies = [
+        { name: 'Bitcoin', value: '$40,000', description: 'Digital Gold' },
+        { name: 'Ethereum', value: '$2,800', description: 'Smart Contracts Platform' },
+        { name: 'Cardano', value: '$2.00', description: 'Blockchain for the Decentralized World' },
+        { name: 'Binance Coin', value: '$350', description: 'Cryptocurrency Exchange Coin' },
+        { name: 'Solana', value: '$150', description: 'Fast and Secure Blockchain' },
+        { name: 'XRP', value: '$1.00', description: 'Digital Payment Protocol' },
+        { name: 'Polkadot', value: '$30', description: 'Interoperable Blockchain Network' },
+        { name: 'Dogecoin', value: '$0.30', description: 'Meme-based Cryptocurrency' },
+        { name: 'Avalanche', value: '$50', description: 'Decentralized Application Platform' },
+        { name: 'Chainlink', value: '$25', description: 'Decentralized Oracle Network' },
+        { name: 'Litecoin', value: '$150', description: 'Digital Silver' },
+        { name: 'Stellar', value: '$0.50', description: 'Fast and Low-Cost Transactions' },
+        { name: 'Tezos', value: '$4.00', description: 'Self-Amending Blockchain' },
+        { name: 'Tron', value: '$0.10', description: 'Decentralized Content Sharing' },
+        { name: 'Neo', value: '$40', description: 'Smart Economy Platform' },
+        { name: 'VeChain', value: '$0.15', description: 'Supply Chain Management' },
+        { name: 'EOS', value: '$5.00', description: 'Scalable and Flexible Blockchain' },
+        { name: 'Filecoin', value: '$40', description: 'Decentralized File Storage' },
+        { name: 'Monero', value: '$200', description: 'Private and Untraceable Currency' },
+        { name: 'Theta', value: '$10', description: 'Blockchain for Video Streaming' },
+        { name: 'Bitcoin', value: '$40,000', description: 'Digital Gold' },
+        { name: 'Ethereum', value: '$2,800', description: 'Smart Contracts Platform' },
+        { name: 'Cardano', value: '$2.00', description: 'Blockchain for the Decentralized World' },
+        { name: 'Binance Coin', value: '$350', description: 'Cryptocurrency Exchange Coin' },
+        { name: 'Solana', value: '$150', description: 'Fast and Secure Blockchain' },
+        { name: 'XRP', value: '$1.00', description: 'Digital Payment Protocol' },
+        { name: 'Polkadot', value: '$30', description: 'Interoperable Blockchain Network' },
+        { name: 'Dogecoin', value: '$0.30', description: 'Meme-based Cryptocurrency' },
+        { name: 'Avalanche', value: '$50', description: 'Decentralized Application Platform' },
+        { name: 'Chainlink', value: '$25', description: 'Decentralized Oracle Network' },
+        { name: 'Litecoin', value: '$150', description: 'Digital Silver' },
+        { name: 'Stellar', value: '$0.50', description: 'Fast and Low-Cost Transactions' },
+        { name: 'Tezos', value: '$4.00', description: 'Self-Amending Blockchain' },
+        { name: 'Tron', value: '$0.10', description: 'Decentralized Content Sharing' },
+        { name: 'Neo', value: '$40', description: 'Smart Economy Platform' },
+        { name: 'VeChain', value: '$0.15', description: 'Supply Chain Management' },
+        { name: 'EOS', value: '$5.00', description: 'Scalable and Flexible Blockchain' },
+        { name: 'Filecoin', value: '$40', description: 'Decentralized File Storage' },
+        { name: 'Monero', value: '$200', description: 'Private and Untraceable Currency' },
+        { name: 'Theta', value: '$10', description: 'Blockchain for Video Streaming' },
+        { name: 'Bitcoin', value: '$40,000', description: 'Digital Gold' },
+        { name: 'Ethereum', value: '$2,800', description: 'Smart Contracts Platform' },
+        { name: 'Cardano', value: '$2.00', description: 'Blockchain for the Decentralized World' },
+        { name: 'Binance Coin', value: '$350', description: 'Cryptocurrency Exchange Coin' },
+        { name: 'Solana', value: '$150', description: 'Fast and Secure Blockchain' },
+        { name: 'XRP', value: '$1.00', description: 'Digital Payment Protocol' },
+        { name: 'Polkadot', value: '$30', description: 'Interoperable Blockchain Network' },
+        { name: 'Dogecoin', value: '$0.30', description: 'Meme-based Cryptocurrency' },
+        { name: 'Avalanche', value: '$50', description: 'Decentralized Application Platform' },
+        { name: 'Chainlink', value: '$25', description: 'Decentralized Oracle Network' },
+        { name: 'Litecoin', value: '$150', description: 'Digital Silver' },
+        { name: 'Stellar', value: '$0.50', description: 'Fast and Low-Cost Transactions' },
+        { name: 'Tezos', value: '$4.00', description: 'Self-Amending Blockchain' },
+        { name: 'Tron', value: '$0.10', description: 'Decentralized Content Sharing' },
+        { name: 'Neo', value: '$40', description: 'Smart Economy Platform' },
+        { name: 'VeChain', value: '$0.15', description: 'Supply Chain Management' },
+        { name: 'EOS', value: '$5.00', description: 'Scalable and Flexible Blockchain' },
+        { name: 'Filecoin', value: '$40', description: 'Decentralized File Storage' },
+        { name: 'Monero', value: '$200', description: 'Private and Untraceable Currency' },
+        { name: 'Theta', value: '$10', description: 'Blockchain for Video Streaming' },
+        { name: 'Bitcoin', value: '$40,000', description: 'Digital Gold' },
+        { name: 'Ethereum', value: '$2,800', description: 'Smart Contracts Platform' },
+        { name: 'Cardano', value: '$2.00', description: 'Blockchain for the Decentralized World' },
+        { name: 'Binance Coin', value: '$350', description: 'Cryptocurrency Exchange Coin' },
+        { name: 'Solana', value: '$150', description: 'Fast and Secure Blockchain' },
+        { name: 'XRP', value: '$1.00', description: 'Digital Payment Protocol' },
+        { name: 'Polkadot', value: '$30', description: 'Interoperable Blockchain Network' },
+        { name: 'Dogecoin', value: '$0.30', description: 'Meme-based Cryptocurrency' },
+        { name: 'Avalanche', value: '$50', description: 'Decentralized Application Platform' },
+        { name: 'Chainlink', value: '$25', description: 'Decentralized Oracle Network' },
+        { name: 'Litecoin', value: '$150', description: 'Digital Silver' },
+        { name: 'Stellar', value: '$0.50', description: 'Fast and Low-Cost Transactions' },
+        { name: 'Tezos', value: '$4.00', description: 'Self-Amending Blockchain' },
+        { name: 'Tron', value: '$0.10', description: 'Decentralized Content Sharing' },
+        { name: 'Neo', value: '$40', description: 'Smart Economy Platform' },
+        { name: 'VeChain', value: '$0.15', description: 'Supply Chain Management' },
+        { name: 'EOS', value: '$5.00', description: 'Scalable and Flexible Blockchain' },
+        { name: 'Filecoin', value: '$40', description: 'Decentralized File Storage' },
+        { name: 'Monero', value: '$200', description: 'Private and Untraceable Currency' },
+        { name: 'Theta', value: '$10', description: 'Blockchain for Video Streaming' },
+        // Ek kripto paralar buraya eklenebilir
+      // Ek kripto paralar buraya eklenebilir
+    ];
+  
+    const cryptoContainer = document.getElementById('crypto-container');
+  
+    cryptocurrencies.forEach(crypto => {
+      const cryptoItem = document.createElement('div');
+      cryptoItem.classList.add('crypto-item');
+      cryptoItem.innerHTML = `<strong>${crypto.name}</strong>: ${crypto.value}<br>${crypto.description}`;
+      cryptoContainer.appendChild(cryptoItem);
+    });
+  });
+  
+  </script>
 		
 	</section>
 

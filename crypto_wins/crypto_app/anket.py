@@ -5,7 +5,7 @@ def anket(request):
     return HttpResponse("""
 	<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-	<title>Anket Sayfası</title>
+	<title>Eğitimlerimiz</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 	            <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' %}">
 
@@ -40,11 +40,11 @@ def anket(request):
 		}
 
 		h1 {
-			font-size: 70px;
+			font-size: 3px;
 		}
 
 		h2 {
-			font-size: 48px;
+			font-size: 28px;
 		}
 
 		h3 {
@@ -150,7 +150,7 @@ def anket(request):
 			text-align: center;
 			border: 2px solid #7ad4cc;
 			cursor: pointer;
-			color: #fff;
+			color: #16d0c5;
 		}
 
 		.site-btn:hover {
@@ -334,14 +334,14 @@ def anket(request):
 			font-size: 16px;
 			padding: 10px 5px;
 			margin-right: 30px;
-			color: #fff;
+			color: #16d0c5;
 		}
 
 		/*---------------------
             Hero Section
         -----------------------*/
 
-		.hero-section {background-image: url("https://cdn.discordapp.com/attachments/1099776572988334160/1172918184626622504/hero-bg.png?ex=6562102e&is=654f9b2e&hm=a22249883dab4e9c5070556b91e85a6d2a8d97cd67ffd29569a05732239e6916&");
+		.hero-section {
 			height: 900px;
 			padding-top: 260px;
 			display: block;
@@ -364,7 +364,7 @@ def anket(request):
 		}
 
 		.hero-text h2 {
-			font-size: 70px;
+			font-size: 20px;
 			margin-bottom: 35px;
 		}
 
@@ -763,6 +763,25 @@ def anket(request):
 			display: block;
 			letter-spacing: 2px;
 		}
+                        
+           .scrollable-boxneriman {
+    width: 600px;
+    height: 555px;
+    overflow: overlay;
+    background-color: #16d0c5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  code{
+    color: black;
+  }
+
+  nerimanbaslik2{
+    color:black;
+
+  }             
+.nerimanbaslik1 
 
 		.blog-text .blog-title {
 			font-size: 22px;
@@ -1595,7 +1614,7 @@ def anket(request):
 				display: block;
 				padding: 10px 5px;
 				margin-right: 0;
-				color: #20509e;
+				color: #16d0c5;
 			}
 			.hero-text h2 {
 				font-size: 40px;
@@ -1760,7 +1779,7 @@ def anket(request):
 	<!-- Header section -->
 	<header class="header-section clearfix">
 		<div class="container-fluid">
-			<a href="#" class="site-logo">
+			<a href="/ " class="site-logo">
 				<img src="https://cdn.discordapp.com/attachments/1099776572988334160/1173011092331561030/logo.png?ex=656266b5&is=654ff1b5&hm=4552100c1d8a001801e9f5ca8b23621e129b121832abdec4c62f907f94a55c19&" alt="">
 			</a>
 			<div class="responsive-bar"><i class="fa fa-bars"></i></div>
@@ -1768,7 +1787,7 @@ def anket(request):
 			<a href="/kayitol" class="site-btn"   >Giriş Yap</a>
 			<nav class="main-menu">
 				<ul class="menu-list">
-                        <li><a href="/anket"id="active" >Anket</a></li>
+                        <li><a href="/anket"id="active" >Eğitimlerimiz</a></li>
 					<li><a href="/piyasalar" >Piyasalar</a></li>
 					<li><a href="/hakkimizda"   >Hakkımızda</a></li>
 					<li><a href="/sss"  >SSS</a></li>
@@ -1779,8 +1798,887 @@ def anket(request):
 	</header>
 
 	<section class="hero-section">
-	<h3>KEMAL BURAYI SEN YAPICAKSIN</h3>
-		
+	  <div class="scrollable-boxneriman">
+
+    <h1>Kod Blokları</h1>
+                        
+                        
+                        
+                        
+                        
+    
+    <h2>#remove listede eleman siler</h2>
+    <pre>
+    <code>
+    liste = [1,2,3,4,5,6,7]
+    liste.append(34)
+    liste
+    liste.append("python")
+    liste
+    liste.extend([10,11,12]) #listeyi genişletmek.  
+    </code>
+    </pre>
+    
+    <h2>#insert 2. indexe "python" değerini atamak</h2>
+    <pre>
+    <code>
+    liste1= [1,2,3,4,5,6,7,8,9]
+    liste1.insert(3, "python")
+    liste1
+    </code>
+    </pre>
+    
+    <h2>#pop ile son elemanı ve belirli bir index'i silme</h2>
+    <pre>
+    <code>
+    liste2= [1,2,3,4,5,6,7]
+    liste2.pop() #son eleman silinir
+    liste2
+    liste2.pop(2) #2. indexi siler
+    liste2
+    </code>
+    </pre>
+    
+    <h2>#remove ile belirli bir elemanı silme</h2>
+    <pre>
+    <code>
+    liste3=["python", "neriman", "sena"]
+    liste3.remove("python")
+    liste3
+    </code>
+    </pre>
+    
+    <h2>#count ile eleman sayısını bulma</h2>
+    <pre>
+    <code>
+    liste4=[1,2,3,4,5,5,5,5,5,6,7,8,8,8,8]
+    liste4.count(5)
+    liste4.count(8)
+    </code>
+    </pre>
+    
+    <h2>#sort ile sıralama</h2>
+    <pre>
+    <code>
+    liste6= [4,2,423,2,1,222,234]
+    liste6.sort() #küçükten başlayarak sıralar
+    liste6 
+    liste6.sort(reverse=True) #tersten başlayarak sıralar
+    liste6
+    </code>
+    </pre>
+    
+    <h2>#demet (tuple) örnekleri</h2>
+    <pre>
+    <code>
+    t= ('p','y','t')
+    p= (1,2,3,4)
+    T= (1,2,3,4,5,6,7) #TAM SAYI 
+    </code>
+    </pre>
+    <h2>#remove listede eleman siler</h2>
+<pre>
+<code>
+liste = [1,2,3,4,5,6,7]
+liste.append(34)
+liste
+liste.append("python")
+liste
+liste.extend([10,11,12]) #listeyi genişletmek.  
+</code>
+</pre>
+
+<h2>#insert 2. indexe "python" değerini atamak</h2>
+<pre>
+<code>
+liste1= [1,2,3,4,5,6,7,8,9]
+liste1.insert(3, "python")
+liste1
+</code>
+</pre>
+
+<h2>#pop ile son elemanı ve belirli bir index'i silme</h2>
+<pre>
+<code>
+liste2= [1,2,3,4,5,6,7]
+liste2.pop() #son eleman silinir
+liste2
+liste2.pop(2) #2. indexi siler
+liste2
+</code>
+</pre>
+
+<h2>#remove ile belirli bir elemanı silme</h2>
+<pre>
+<code>
+liste3=["python", "neriman", "sena"]
+liste3.remove("python")
+liste3
+</code>
+</pre>
+
+<h2>#count ile eleman sayısını bulma</h2>
+<pre>
+<code>
+liste4=[1,2,3,4,5,5,5,5,5,6,7,8,8,8,8]
+liste4.count(5)
+liste4.count(8)
+</code>
+</pre>
+
+<h2>#sort ile sıralama</h2>
+<pre>
+<code>
+liste6= [4,2,423,2,1,222,234]
+liste6.sort() #küçükten başlayarak sıralar
+liste6 
+liste6.sort(reverse=True) #tersten başlayarak sıralar
+liste6
+</code>
+</pre>
+
+<h2>#demet (tuple) örnekleri</h2>
+<pre>
+<code>
+t= ('p','y','t')
+p= (1,2,3,4)
+T= (1,2,3,4,5,6,7) #TAM SAYI 
+</code>
+</pre>
+
+<h2>#dilimleme yöntemi</h2>
+<pre>
+<code>
+dil= ("kotlin", "C++","JAVA","PYTHON","ObjectC")
+yenidil=[dil[:4],'SWİFT']
+print(yenidil) #2 elemanlı tuple çıkacak
+dil= ("kotlin", "C++","JAVA","PYTHON","ObjectC")
+dil=list(dil )#listeye dönüştü
+dil.remove("ObjectC")
+dil.append("SWİFT")
+print(tuple(dil))
+</code>
+</pre>
+
+<h2>#tuple yapılarında arama</h2>
+<pre>
+<code>
+A=(2,3,5,8,9,12,34,6,77)
+ara=int(input("Aranan sayı: "))
+if ara in A:
+   i=A.index(ara)
+   print("Aranan sayı",i+1,". sırada bulundu.")
+else: 
+   print("aranan sayı bulunamadı.")
+</code>
+</pre>
+<h2>#remove listede eleman siler</h2>
+<pre>
+<code>
+liste = [1,2,3,4,5,6,7]
+liste.append(34)
+liste
+liste.append("python")
+liste
+liste.extend([10,11,12]) #listeyi genişletmek.  
+</code>
+</pre>
+
+<h2>#insert 2. indexe "python" değerini atamak</h2>
+<pre>
+<code>
+liste1= [1,2,3,4,5,6,7,8,9]
+liste1.insert(3, "python")
+liste1
+</code>
+</pre>
+
+<h2>#pop ile son elemanı ve belirli bir index'i silme</h2>
+<pre>
+<code>
+liste2= [1,2,3,4,5,6,7]
+liste2.pop() #son eleman silinir
+liste2
+liste2.pop(2) #2. indexi siler
+liste2
+</code>
+</pre>
+
+<h2>#remove ile belirli bir elemanı silme</h2>
+<pre>
+<code>
+liste3=["python", "neriman", "sena"]
+liste3.remove("python")
+liste3
+</code>
+</pre>
+
+<h2>#count ile eleman sayısını bulma</h2>
+<pre>
+<code>
+liste4=[1,2,3,4,5,5,5,5,5,6,7,8,8,8,8]
+liste4.count(5)
+liste4.count(8)
+</code>
+</pre>
+
+<h2>#sort ile sıralama</h2>
+<pre>
+<code>
+liste6= [4,2,423,2,1,222,234]
+liste6.sort() #küçükten başlayarak sıralar
+liste6 
+liste6.sort(reverse=True) #tersten başlayarak sıralar
+liste6
+</code>
+</pre>
+
+<h2>#demet (tuple) örnekleri</h2>
+<pre>
+<code>
+t= ('p','y','t')
+p= (1,2,3,4)
+T= (1,2,3,4,5,6,7) #TAM SAYI 
+</code>
+</pre>
+
+<h2>#dilimleme yöntemi</h2>
+<pre>
+<code>
+dil= ("kotlin", "C++","JAVA","PYTHON","ObjectC")
+yenidil=[dil[:4],'SWİFT']
+print(yenidil) #2 elemanlı tuple çıkacak
+dil= ("kotlin", "C++","JAVA","PYTHON","ObjectC")
+dil=list(dil )#listeye dönüştü
+dil.remove("ObjectC")
+dil.append("SWİFT")
+print(tuple(dil))
+</code>
+</pre>
+
+<h2>#tuple yapılarında arama</h2>
+<pre>
+<code>
+A=(2,3,5,8,9,12,34,6,77)
+ara=int(input("Aranan sayı: "))
+if ara in A:
+   i=A.index(ara)
+   print("Aranan sayı",i+1,". sırada bulundu.")
+else: 
+   print("aranan sayı bulunamadı.")
+</code>
+</pre>
+
+<h2>#set tanımlama şekilleri</h2>
+<pre>
+<code>
+#kümede indx yoktur
+k={1,2,4,5} #tek sayılar kümesi
+k1={"abracadabra"}
+b=set("alacazam") #b={alczm} kümesi
+j=set() #küme ise set konulmalı. Yoksa sözlük olur. 
+</code>
+</pre>
+
+<h2>#Set İşlemleri</h2>
+<pre>
+<code>
+#A-B ---> A.difference(B)
+#A simetrik fark B ----> A^B ----> A.symmetric_difference(B)
+#A kesişim B ----> A&B ------> A.intersection(B)
+#A birleşim B ----> A | B -----> A.union(B)
+#A alt küme B ---> A<=B ----> A.issubset(B)
+#A B'yi kapsar ---> A>=B ----> A.issuperset(B) A'nın B'yi kapsaması sonucu True False'u dönecektir.
+
+#K.add(x) kümeye x elemanını ekler
+#K.copy() küme kopyalanır
+#K.remove(x) içerisine yazılan veriyi siler. O veri yoksa hata verir.
+#K.discard() görmezden gelir. 
+#K.pop() kümenin İLK elemanını siler. Listede son elemanı siliyordu
+#K.isdisjoint() iki kümenin kesişim kümesinin boş olup olmadığını sorgular. Boş ise True, değil ise False döner.
+#K.update(B) -----> K.intersection_update --> A kesişim B gerçekleşir ve A küme elemanları buna göre güncellenir.
+#K.difference_update(B) K fark B işlemi yapılır. 
+</code>
+</pre>
+
+<h2>#frozenset</h2>
+<pre>
+<code>
+#0'dan 24'e kadar olan çift sayıların karesini veren uygulama
+A= (2,3,4,5,6,7,8,9,12,43,6,77)
+A=frozenset(A)
+A.add(90) #Hata verecek çünkü frozenset üzerinde değişiklik yapamayız.
+</code>
+</pre>
+
+<h2>#Sözlükler (Dict)</h2>
+<pre>
+<code>
+derece= dict(ankara=30, istanbul=14.5, yozgat=10, eskişehir=26)
+print(list(sorted(derece)))
+for il in derece:
+    print(il,"sıcaklık...",derece[il])
+</code>
+</pre>
+
+<h2>#Hata Fırlatmak</h2>
+<pre>
+<code>
+def terscevir(s):
+    if (type(s) != str):
+        raise ValueError("Lütfen bir sayı giriniz")
+terscevir()
+</code>
+</pre>
+
+<h2>#Hata Ayıklama (try, except, finally)</h2>
+<pre>
+<code>
+try:
+    a= int("sdkljflksj35435") #ValueError
+    print("program burada")
+except ValueError:
+    print("hatalı")
+    
+try:
+    a=int(input("sayı1: "))
+    b=int(input("sayı2: ")) #ZeroDivisionError
+    print(a/b)
+except ValueError:
+    print("Lütfen sayıları doğru girin")
+except ZeroDivisionError:
+    print("Bir sayı 0'a bölünemez.")
+    
+finally:
+    print("her halükarda çalışıyorum")
+</code>
+</pre>
+
+
+  
+  </div>
+		   <h1> 1st=[2,-3,0,4,-1]
+        A=[] 
+    </h1> 
+    <p>1st=[2,-3,0,4,-1]: Bu satır, "1st" adlı bir liste oluşturur ve bu listeye [2, -3, 0, 4, -1] elemanlarını atar. Bu listenin elemanları tam sayı değerleridir.
+ A=[]: Bu satır, "A" adlı boş bir liste oluşturur. Yani, başlangıçta bu liste içinde hiç eleman yoktur.</p>
+    <h1>lst=[2,-3,0,4,-1]
+        lst[0]=5
+        print(lst[1])
+        lst[4]=12
+        print(lst)
+        print([10,20,30][1])</h1> 
+    <p>lst=[2,-3,0,4,-1]: "lst" adında bir liste oluşturulur ve içine [2, -3, 0, 4, -1] elemanları eklenir.
+        lst[0]=5: Listenin ilk elemanı (0. index), 5 ile değiştirilir. Yani, liste şu hale gelir: [5, -3, 0, 4, -1].
+        print(lst[1]): Listenin ikinci elemanı (1. index), yani -3 ekrana yazdırılır.
+        lst[4]=12: Listenin beşinci elemanı (4. index), 12 ile değiştirilir. Şimdi liste şu şekildedir: [5, -3, 0, 4, 12].
+        print(lst): Liste, en son haliyle yani [5, -3, 0, 4, 12] ekrana yazdırılır.
+        print([10,20,30][1]): [10, 20, 30] listesinin ikinci elemanı (1. index), yani 20 ekrana yazdırılır. ...</p>
+    <h1>def main():
+        data=[10,20,30,40]
+        print(data[-1])
+        print(data[-3])</h1> 
+    <p>Bu kod, negatif indeks kullanarak bir listenin sondan başlayarak elemanlarına erişim gösterir.
+       -1 indeksi son elemanı, -2 indeksi sondan bir önceki elemanı, ve böyle devam eder. Bu, listedeki elemanlara ters yönde indeksleme yapmak için kullanışlı bir yöntemdir.</p>
+    <h1>a= [2,4,6,8]
+        a+[1,3,5]
+        a=a+[1,3,5]
+        a+= [10]  
+        print(a)</h1> 
+    <p>La = [2, 4, 6, 8]: İlk olarak, "a" adında bir liste oluşturulur ve içine [2, 4, 6, 8] elemanları eklenir.
+        a + [1, 3, 5]: Bu ifade, "a" listesini [1, 3, 5] listesi ile birleştirir, ancak bu işlem "a" listesini değiştirmez. Yani, bu ifadeyi kullanarak "a" listesinin kendisi değişmez.
+        a = a + [1, 3, 5]: Bu ifade, "a" listesini [1, 3, 5] listesi ile birleştirir ve bu birleşmiş listeyi "a" değişkenine atar. Yani, "a" listesi bu ifade sonrasında [2, 4, 6, 8, 1, 3, 5] olur.
+        a += [10]: Bu ifade, "a" listesine [10] elemanını ekler. Bu ifade, "a" listesini değiştirir ve "a" listesi şu şekilde olur: [2, 4, 6, 8, 1, 3, 5, 10].
+        print(a): Son olarak, "a" listesi ekrana yazdırılır. Bu durumda, "a" listesi [2, 4, 6, 8, 1, 3, 5, 10] olarak ekrana yazdırılır.</p>
+    <h1>x=2
+        a=[0,1]
+        a+= [x]
+        print(a)</h1> 
+    <p>Lx = 2: Bu satırda, x adında bir değişken oluşturulur ve değeri 2 olarak atanır.
+        a = [0, 1]: Bu satırda, a adında bir liste oluşturulur ve içine [0, 1] elemanları eklenir.
+        a += [x]: Bu ifade, a listesine x değişkeninin değerini ekler. Yani, a listesi [0, 1, 2] olur. Burada += operatörü, bir listeyi başka bir listeyle genişletmek için kullanılır.
+        print(a): Son olarak, "a" listesi ekrana yazdırılır. Bu durumda, "a" listesi [0, 1, 2] olarak ekrana yazdırılır.</p>
+    <h1>def listeOluştur():
+        sonuc=[]
+        girilen_Sayi=0
+        while girilen_Sayi>=0:
+            girilen_Sayi = int(input("Sayı Giriniz:  (Çıkış için -1)"))
+            if(girilen_Sayi>=0):
+                sonuc+=[girilen_Sayi]
+        return sonuc
+    def main():
+        liste=listeOluştur()
+        print(liste)
+        
+    main()</h1> 
+    <p>def listeOluştur()::
+        Bu fonksiyon, boş bir liste olan sonuc adında bir liste oluşturur.
+        girilen_Sayi değişkenini sıfıra eşitler.
+        Bir döngü başlatır ve kullanıcıdan sayı girişi ister.
+        Kullanıcıdan alınan sayı, 0 veya daha büyükse, bu sayıyı sonuc listesine ekler.
+        Eğer kullanıcı -1 girerse veya daha küçük bir sayı girerse, döngüyü sonlandırır.
+        Son olarak, oluşturulan sonuc listesini döndürür.
+        def main()::
+        Bu fonksiyon listeOluştur fonksiyonunu çağırarak bir liste alır.
+        Ardından, alınan listeyi ekrana yazdırır.
+        main(): Bu satır, main fonksiyonunu çağırarak programın çalışmasını sağlar.</p>
+    <h1>def main():
+        a = list(range(0,10))
+        print(a)
+        a = list(range(10,-1,-1))
+        print(a)
+    main()     ...</h1> 
+    <p>Bu Python programı iki adet liste oluşturur ve bu listeleri ekrana yazdırır. İlk liste, 0'dan 9'a kadar olan sayıları içerir, ikinci liste ise 10'dan 0'a kadar olan sayıları tersten içerir. Bu işlemleri gerçekleştiren bir main fonksiyonu tanımlanmıştır. Program çalıştırıldığında, bu iki liste ekrana yazdırılır.</p>
+    <h1>def main():
+        a= [0]*10
+        print(a)
+        a= [3.4] *5
+        print(a)
+        n=3
+        a=n*["abc", 22,8.8]
+        print(a)
+    main()</h1> 
+    <p>a adında bir liste oluşturulur ve tüm elemanları sıfır olan 10 elemanlı bir liste oluşturulur. a liste olarak adlandırılmış ve ekrana yazdırılır.
+        a adında bir başka liste oluşturulur ve tüm elemanları 3.4 olan 5 elemanlı bir liste oluşturulur. Bu liste de a adıyla adlandırılır ve ekrana yazdırılır.
+        n adında bir değişken tanımlanır ve a listesini bu değişkenin değeri kadar tekrar eden bir liste oluşturulur. Bu durumda, 3 kez ["abc", 22, 8.8] içeren bir liste elde edilir ve ekrana yazdırılır.</p>
+
+    <h1>def main():
+        toplam=0.0
+        girilecek_sayi_adeti=5
+        sayilar=[]
+        print("Lütfen ", girilecek_sayi_adeti, "adet sayı giriniz: ")
+        for sayi in range(0,girilecek_sayi_adeti):
+            sayi1=float(input(str(sayi+1)+" .sayıyı giriniz: "))
+            sayilar+=[sayi1]
+            toplam+=sayi1
+        for i in sayilar:
+            print(end="Girilen sayılar: ")
+            print(i, end="")
+            print() #alt satıra geç
+            print("Ortalama: ", toplam/girilecek_sayi_adeti)
+    main()</h1> 
+    <p>Bu Python programı, kullanıcıdan belirli bir sayıda sayı girişi alarak bu sayıların toplamını ve ortalamasını hesaplar. İlgili main fonksiyonu şu işlemleri gerçekleştirir:
+
+toplam adında bir değişken oluşturulur ve başlangıçta 0.0 olarak ayarlanır.
+girilecek_sayi_adeti adında bir değişken tanımlanır ve başlangıçta 5 olarak ayarlanır.
+Boş bir liste olan sayilar oluşturulur.
+Kullanıcıya belirtilen sayıda sayı girmesi istenir ve her girilen sayı sayilar listesine eklenir ve toplam değişkenine eklenir.
+Girilen sayılar ve ortalama ekrana yazdırılır.
+Sonuç olarak, bu program kullanıcının belirtilen adette sayı girmesini sağlar, bu sayıları bir listeye ekler, toplamını ve ortalamasını hesaplar, ve ekrana yazdırır.</p>
+    <h1>a=[10,20,30,40]
+        b=[10,20,30,40]
+        print("a=",a)
+        print("b=",b)
+        b[2]
+        print("a=",a)
+        print("b=",b)</h1> 
+    <p>Bu Python kodu, iki adet liste (a ve b) oluşturur ve ardından bu listeleri ekrana yazdırır. Ancak, listenin elemanları üzerinde herhangi bir değişiklik yapmaz. Kodun akışını adım adım açıklamak gerekirse:
+
+        a ve b adında iki liste oluşturulur ve her ikisi de aynı elemanları içerir: [10, 20, 30, 40].
+        a ve b listeleri ekrana yazdırılır.
+        b[2] ifadesi liste b'nin 2. elemanına erişir, ancak bu değer kullanılmadığı ve bir değişkene atanmadığı için bir etkisi olmaz.
+        a ve b listeleri tekrar ekrana yazdırılır.
+        Sonuç olarak, kodun temel amacı iki listeyi oluşturmak ve içeriklerini ekrana yazdırmaktır. Ancak, b[2] ifadesinin sonucu kullanılmadığı için herhangi bir değişiklik olmaz.</p>
+    <h1>lst= [10,20,30,40,50,60,70,80,90,100,110,120]
+        print(lst)
+        print(lst[0:3]) #3. index dahil değil
+        print(lst[4:8])
+        print(lst[-5:-3])
+        print(lst[2:-2:2])
+        print(lst[:])
+        print(lst[-100:3])</h1> 
+    <p>Bu Python kodu, bir liste olan lst üzerinde farklı dilimleme (slicing) işlemlerini kullanarak belirli alt listeleri seçer ve ekrana yazdırır. İşte kodun temel amacını açıklayan adımlar:
+
+        lst listesi oluşturulur ve ekrana yazdırılır.
+        lst[0:3] ifadesi kullanılarak, lst'nin 0. (dahil) ile 3. (hariç) indexleri arasındaki elemanlar seçilir ve ekrana yazdırılır.
+        lst[4:8] ifadesi kullanılarak, lst'nin 4. (dahil) ile 8. (hariç) indexleri arasındaki elemanlar seçilir ve ekrana yazdırılır.
+        lst[-5:-3] ifadesi kullanılarak, lst'nin sondan 5. (dahil) ile sondan 3. (hariç) indexleri arasındaki elemanlar seçilir ve ekrana yazdırılır.
+        lst[2:-2:2] ifadesi kullanılarak, lst'nin 2. (dahil) ile sondan 2. (hariç) indexleri arasındaki elemanlar seçilir ve 2'şer atlayarak ekrana yazdırılır.
+        lst[:] ifadesi kullanılarak, lst'nin tamamı seçilir ve ekrana yazdırılır.
+        lst[-100:3] ifadesi kullanılarak, -100 (eksi indeksler, listenin başından başlayarak) ile 3. (hariç) indexleri arasındaki elemanlar seçilir. Ancak, liste boyutu kadar eleman olmadığı için tüm liste seçilir ve ekrana yazdırılır.
+        Kısacası, kod, bir listenin belirli dilimlerini seçerek ve ekrana yazdırarak dilimleme işlemlerini gösterir.</p>
+    <h1>a=[1,2,3,4,5,6,7,8]
+        print("listenin sondan başlanarak dilimlenmesi")
+        print("Liste bir dilimle örneğidir: ",a)
+        
+        for i in range (0,len(a)+1):
+            print("<",a[0:i],">",sep="")
+        print("-------------------------------")
+        for i in range (0,len(a)+1):
+            print("<",a[i:len(a)+1],">",sep="")</h1> 
+    <p>Bu Python kodu, bir listenin sondan başlanarak dilimlenmesini gösterir. İki for döngüsü kullanılarak, listenin farklı dilimleri (a[0:i] ve a[i:len(a)+1]) oluşturularak ekrana yazdırılır. İşte kodun temel amacını açıklayan adımlar:
+
+        a adında bir liste oluşturulur ve ekrana yazdırılır.
+        İlk for döngüsü, listenin başından itibaren (a[0:i]) giderek artan dilimleri oluşturur ve her bir dilimi <...> içinde ekrana yazdırır.
+        İkinci for döngüsü, listenin sondan başlanarak (a[i:len(a)+1]) giderek azalan dilimleri oluşturur ve yine her bir dilimi <...> içinde ekrana yazdırır.</p>
+    <h1>b=list(range(20))
+        print(b)
+        del b[2]
+        print(b)</h1> 
+    <p>Bu kod, bir liste oluşturur, listenin içeriğini ekrana yazdırır, ardından listenin belirli bir indeksindeki elemanı (b[2]) siler ve güncellenmiş listeyi ekrana yazdırır. Kısaca:
+
+        list(range(20)) ifadesi ile 0'dan 19'a kadar olan sayıları içeren bir liste (b) oluşturulur.
+        print(b) ile liste içeriği ekrana yazdırılır.
+        del b[2] ifadesi ile listenin 2. indeksindeki eleman silinir.
+        print(b) ile güncellenmiş liste içeriği ekrana yazdırılır.</p>
+    <h1>import random
+
+        def Topla(lst):
+            sonuc = 0
+            for eleman in lst:
+                sonuc += eleman
+            return sonuc
+        
+        def SifirAta(lst):
+            for i in range(len(lst)):
+                lst[i] = 0
+        
+        def RastgeleDegerAta(n):
+            sonuc = 0
+            for i in range(n):
+                RastgeleDeger = random.randrange(100)
+                sonuc += RastgeleDeger
+            return sonuc
+        
+        def main():
+            a = [2, 4, 6, 8]
+            print(a)
+            print(sum(a))
+        
+            SifirAta(a)
+            print(a)
+            print(sum(a))
+        
+            a = []
+            print(a)
+            print(sum(a))
+        
+            a = RastgeleDegerAta(10)
+            print(a)
+            print(sum(a))
+        
+        main()</h1> 
+    <p>Topla fonksiyonu: Bir listenin elemanlarını toplar ve toplamı döndürür.
+        SifirAta fonksiyonu: Bir listenin tüm elemanlarını sıfıra ayarlar.
+        RastgeleDegerAta fonksiyonu: Belirli bir sayıda rastgele değer üretir (0 ile 99 arasında) ve bu değerlerin toplamını döndürür.
+        main fonksiyonu: Önceden tanımlanmış bir liste üzerinde bu fonksiyonları çağırır ve sonuçları ekrana yazdırır.
+        Örneğin:
+        
+        İlk olarak, a listesi [2, 4, 6, 8] olarak belirlenir ve bu listenin elemanları toplamı (sum(a)) ve kendisi ekrana yazdırılır.
+        Ardından, SifirAta(a) fonksiyonu çağrılarak listenin tüm elemanları sıfıra ayarlanır ve bu güncellenmiş liste ve elemanları toplamı ekrana yazdırılır.
+        Daha sonra, boş bir liste oluşturulur, elemanları toplamı ve liste ekrana yazdırılır.
+        Son olarak, RastgeleDegerAta(10) fonksiyonu çağrılarak rastgele değerler üretilir, bu değerlerin toplamı ve liste ekrana yazdırılır.</p>
+    <h1>ipsum dolor sit amet, consectetur adipiscing elit. ...</h1> 
+                        
+      <h1>from math import sqrt 
+sayi = float(input("sayı giriniz: "))
+kok= sqrt(sayi)
+print(sayi, "sayısının karekökü", kok)
+</h1>
+<p>Kullanıcıdan sayı al, karekökünü hesapla, sonuçları yazdır.</p>
+<p>fonskiyonlar: her biri kendine has. Metotların yerine geçebilir.</p> 
+<p>sqrt:karekök alma </p>
+
+<h1>
+from math import sqrt 
+x=16 
+y = sqrt(x)
+print(y)
+</h1>
+<p>from math import sqrt: math modülünden sqrt fonksiyonunu içe aktarır. Bu fonksiyon, bir sayının karekökünü hesaplamak için kullanılır.</p>
+<p>x = 16: x adında bir değişken oluşturup değerini 16 olarak ayarlar.</p> 
+<p>y = sqrt(x): sqrt fonksiyonunu kullanarak x değişkeninin karekökünü hesaplar ve sonucu y değişkenine atar.</p>
+<p>y = sqrt(x): sqrt fonksiyonunu kullanarak x değişkeninin karekökünü hesaplar ve sonucu y değişkenine atar.</p>
+<p>print(y): Elde edilen karekök değerini ekrana yazdırır.</p>
+<p>Bu kodu çalıştırdığınızda, 16 sayısının karekökü olan 4.0 değeri ekrana yazdırılacaktır.</p>
+ <p>sqrt fonksiyonu her zaman bir float (ondalık) değeri döndürdüğü için, sonuç 4.0 olarak ifade edilir.</p>    
+<h1>from math import sqrt 
+y= 2*sqrt(x+16)-4
+print(y)
+print(sqrt(int("45")))</h1>
+<p>Bu Python kodu, matematiksel hesaplamalar yaparak iki farklı değeri ekrana yazdırmaktadır. İşte kodun adım adım açıklaması:</p>
+<p>from math import sqrt: math modülünden sqrt fonksiyonunu içe aktarır.</p>
+<p>x = 16: x adında bir değişken oluşturup değerini 16 olarak ayarlar.</p>
+
+<p>y = 2 * sqrt(x + 16) - 4: y değişkenine, matematiksel ifade 2 * sqrt(x + 16) - 4'ü hesaplayarak değerini atar.</p>
+<p>print(y): İlk hesaplanan değeri ekrana yazdırır.</p>
+<p>print(sqrt(int("45"))): "45" string'ini önce integer'a (int) çevirir, sonra bu sayının karekökünü (sqrt) alarak ekrana yazdırır.</p>
+<p>Kodun çıktısı, ilk olarak y değişkeninin değerini, ardından "45" sayısının karekökünü içerir.</p>
+<h1>def selamla():
+    print("selam arkadaşlar")
+    print("nasılsınız")
+type(selamla)</h1>
+<p>#fonksiyoların 3 bölümü vardır: isim ,parametre kısmı,sonuç bölümü.</p>
+<p>#parametre kısmı parantezin içine yazılan. </p>
+<p>#def fonksiyon adı (parametre 1, 2, 3,...(opsiyonel1)):</p>
+<p>#fonksiyon blogu</p>
+<h1>selamla()</h1>
+<p>selam arkadaşlar
+ nasılsınız</p>
+ <h1>def selamla(isim): #isim parametresi
+    print("merhaba",isim)</h1>
+  <h1>selamla("kemal") #merhaba isim</h1>
+  <p>#argüman: gerçek değerler, parametre:argümanların değerlerle eşleşmesi</p>
+  <h1>selamla("ayşe")</h1>
+  <h1>def toplama(a,b,c):
+    print("toplamları:", a+b+c)</h1>
+    <h1>toplama(3,4,5):12</h1>
+    <h1>toplama(111,112,122):345</h1>
+
+    <h1>def faktoriyel(number):
+    factorial = 1
+    if number >= 0:
+        for i in range(1, number + 1):
+            factorial *= i
+        return factorial
+    else:
+        return None
+ 
+number = int(input("Lütfen faktöriyelini bulmak istediğiniz sayıyı giriniz...\n"))
+factorial = faktoriyel(number)
+ 
+if factorial:
+    print(f"Girdiğiniz sayının faktöriyeli: {number}! = {factorial}")
+else:
+    print("Negatif sayıların faktöriyeli olmaz!")</h1>
+    <p>Lütfen faktöriyelini bulmak istediğiniz sayıyı giriniz...</p>
+ <p>4</p>
+<p>Girdiğiniz sayının faktöriyeli: 4! = 24</p>
+<h1>def faktoriyel(sayı):
+    faktoriyel=1
+    if (sayı ==0 or sayı == 1):
+        print("faktoriyel,", faktoriyel)
+    else: 
+        while (sayı>=1):
+            faktoriyel *= sayı
+            sayı -=1
+        print("faktöriyel",faktoriyel)</h1>
+        <h1>faktoriyel(5)=faktöriyel 120</h1>
+        <h1>from random import random
+random()=0.5723086058492693</h1>
+<h1>print(print(4))=4
+None</h1>
+<h1>type(int())=int</h1>
+<p>def bilgilerinigöster(ad="bilgi yok", soyad="bilgi yok", numara="bilgi yok"):: Bu satır, bilgilerinigöster adında bir fonksiyon tanımlar.</p>
+ <p>Bu fonksiyon üç adet parametre alabilir: ad, soyad, ve numara. Her bir parametrenin varsayılan değeri "bilgi yok" olarak belirlenmiştir.</p>
+ <h1>def bilgilerinigöster(ad= "bilgi yok", soyad= "bilgi yok", numara="bilgi yok "):
+    print("ad: ", ad, "soyad: ", soyad, "numara: ", numara) </h1>
+    <h1>bilgilerinigöster()</h1>
+    <p>ad:  bilgi yok soyad:  bilgi yok numara:  bilgi yok </p>
+    <h1>bilgilerinigöster(ad="efe", numara= "12121")</h1>
+    <p>ad:  efe soyad:  bilgi yok numara:  12121</p>
+
+    <h1>from math import sqrt 
+
+  def kökalmak(sayı):
+    kök=sqrt(sayı)
+    print(kök)
+  </h1>
+  <p>from math import sqrt: math modülünden sqrt fonksiyonunu içe aktarır.</p> 
+  <p>Bu fonksiyon, bir sayının karekökünü hesaplamak için kullanılır.</p>
+   <p>kök = sqrt(sayı): Fonksiyon içinde, sqrt fonksiyonunu kullanarak sayı parametresinin karekökünü hesaplar ve bu değeri kök değişkenine atar.</p>
+   <p>print(kök): Hesaplanan karekök değerini ekrana yazdırmak için print fonksiyonunu kullanır.</p>
+   <h1>kökalmak(4)</h1>
+   <p>2.0</p>
+   <h1>from math import exp 
+def eulersabiti(sayı):
+    sabit=exp(sayı)
+    print(sabit)</h1>
+    <h1>eulersabiti(2)</h1>
+    <p>7.38905609893065</p>       
+
+
+
+    <h1> YAŞ SORGULAMA KODLARI...</h1>
+    <p>yaş = int(input("yaşınızı giriniz:"))
+
+        if (yaş <18):
+            print("bu mekana giremezsiniz")
+        else:
+            print("mekana hoşgeldiniz")</p>
+    <h1>DERSTEN GEÇTİ KALDI KODLARI ...</h1>
+    <p>note = float ( input ( "notunuzu giriniz:" )) 
+        if  note >= 90 : 
+            print ( "AA" ) 
+        elif  note >= 85 : 
+            print ( "BA" ) 
+        elif  note >= 80 : 
+            print ( "BB" ) 
+        elif  not >= 75 : 
+            print ( "CB" ) 
+        elif  notu >= 70 : 
+            print ( "CC" ) 
+        elif  notu >= 65 : 
+            print ( "DC" ) 
+        elif  notu >= 60 : 
+            print ( "DD" ) 
+        else : 
+            print ( "DERSTEN KALDINIZ....:" )</p>
+    <h1>SESLİ VE SESSİZ HARF ÖĞRENME KODLARI</h1>
+    <p> harf =  input  ( "bir harf giriniz:" ) 
+        if  harf .  isalpha (): 
+            if  harf  in  "aeiouAEIOU" : 
+                print ( "sesli harf" ) 
+            else : 
+                print ( "sessiz harf" ) 
+        else : 
+            print ( "geçersiz karakter..." )</p>
+    <h1>POZİTİF NEGATİF SAYI ÖĞRENME KODLARI</h1>
+    <p>sayi = int ( input ( "1.sayıyı giriniz:" )) 
+        sayi = int ( input ( "2.sayıyı giriniz:" )) 
+        sayi = int ( input ( "3.sayıyı giriniz:" )) 
+        if  ( sayi < 0 ): 
+            print ( "s" ) 
+        elif ( sayi > 0 ): 
+            print ( "sayı pozitiftir" ) 
+        else : 
+            print ( "0 sayınız girdiniz" )</p>
+    <h1>LOGIN SAYFASI HAZIRLAMA KODLARI</h1>
+    <p>dogru_kullanıcı_Adi = "yönetici" 
+        dogru_sifre = "şifre123"
+        
+        girilen_kullanıcı_Adi = input ( "kullanıcı adı:" ) 
+        girilen_şifre = input ( "şifre:" )
+        
+        if ( girilen_kullanıcı_Adi != dogru_kullanıcı_Adi  ve  girilen_şifre ==  doğru_şifre ): 
+            print ( "kullanıcı adı hatalıdır...." ) 
+        elif ( girilen_kullanıcı_Adi == dogru_kullanıcı_Adi   ve  girilen_şifre !=  doğru_şifre ): 
+            print ( "parola hatalıdır.." ) 
+        elif ( girilen_kullanıcı_Adi != dogru_kullanıcı_Adi  ve  girilen_şifre  !=  dogru_şifre ): 
+            print ( "kullanıcı adı ve paroladır..." ) 
+        else : 
+            print ( "başarıyla giriş yapıldı...." )</p>
+    <h1>BOY KİLO ENDEKSİ HESAPLAMA KODLARI</h1>
+    <p>adınız = input ( "adınızı giriniz:" ) 
+        kilo = int ( input ( "kilonuzu giriniz:" )) 
+        boy = float ( input ( "boyunuzu giriniz:" )) 
+        formül = kilo / ( boy * boy ) 
+        print ( adınız , " ,boy kilo dijital değerin:" , formülü ) 
+        if  0 <= formülü <= 18  : 
+            print ( "zayıf çıktın." ) 
+        elif  18 < formülü <= 24 : 
+            print ( "normal çıktın." ) 
+        elif  24 < formülü <= 29 : 
+           print ( "fazla kilolu çıktın." ) 
+        else : 
+            print ( "obez çıktın..." )</p>
+    <h1>EN BÜYÜK OLAN SAYIYI BULMA KODLARI</h1>
+    <p>sayi1  =  int ( input ( "1. Sayı: " )) 
+        sayi2  =  int ( input ( "2. Sayı: " )) 
+        sayi3  =  int ( input ( "3. Sayı: " ))
+         
+        if  ( sayi1  >=  sayi2 )  ve  ( sayi1  >=  sayi3 ): 
+           buyuk  =  sayi1 
+        elif  ( sayi2  >=  sayi1 )  ve  ( sayi2  >=  sayi3 ): 
+           buyuk  =  sayi2 
+        else : 
+           buyuk  =  sayi3
+         
+        print ( sayi1 , "," , sayi2 , "ve" , sayi3 , "içinde büyük olan sayı" , buyuk )
+         </p>
+    <h1>SORU CEVAP İLE SORUN ÇÖZME KODLARI</h1>    
+    <p>print("bilgisayarım çalışmıyor")
+        çözüm=False
+        while not çözüm:
+            print("elektrik var mı")
+            secim=input("y or n:  ")
+            if secim=="n":
+                print("fişe takılımı")
+                secim=input("y or n:  ")
+                if secim=="n":
+                    print("fişe takın")
+                elif secim=="y":
+                    print("açma düğmesine bastınızmı")
+                    secim=input("y or n:  ")
+                    if secim=="n":
+                        print("düğmeye basın")
+                    elif secim=="y":
+                        print("sigorta atmış mı")
+                        secim=input("y or n:  ")
+                        if secim=="n":
+                            print("şalteri kontrol edin")
+                        else:
+                            print("teknik servise başvurun")
+                    else:
+                        print("teknik servise başvurun")
+        </p>
+    <h1>GİRİLEN SAYILARIN ORTALAMASINI BULMA KODLARI</h1>
+    <p>def main():
+        toplam=0.0
+        girilecek_sayi_adeti=5
+        sayilar=[]
+        print("lütfen",girilecek_sayi_adeti,"adet sayı giriniz:")
+        for sayı in range(0,girilecek_sayi_adeti):
+            sayi1=float(input(str(sayi1+1)+". sayıyı giriniz:"))
+            sayilar+=[sayi1]
+            toplam+=sayi1
+        for i in sayilar:
+            print(end="girilen sayılar:")
+            print(i, end="")
+            print()#alt satıra geçiş
+            print("ortalama:",toplam/girilecek_sayi_adeti)
+            
+    main()     </p>
+    <h1>LİSTEYE ELEMAN EKLEME KODLARI</h1>
+    <p>liste = [1,2,3,4,5,6,7]
+        liste.insert(2,"pyhton")
+        liste</p>
+    <h1>LİSTEDEN ELEMAN KALDIRMA KODLARI</h1>
+    <p>liste = [1,2,3,4,5,6,7]
+        liste.remove(1)
+        liste</p>
+    <h1>ÜÇGEN VE KARE İÇİN KENAR HESAPLAMA KODLARI</h1>    
+    <p>n= int(input("Üçgen için 3, dörtgen için 4 yaz: "))
+        if(n!=4 and n!=3):
+            print(" geçerli kenar sayısı için 3 veya 4 yaz.")
+            n= int(input("Üçgen için 3, dörtgen için 4 yaz: "))
+        if(n==3):
+            b= float(input("1.kenarı gir: "))
+            c= float(input("2.kenarı gir: "))
+            d= float(input("3.kenarı gir: "))
+            if (b==c or b==d or d==c):
+                print("Eşkenar üçgen!")
+            elif (b==c==d):
+                print("İkizkenar üçgen!")
+            elif (b!=c and b!=d and c!=d):
+                print("Sıradan bir üçgen!") 
+            elif (b+c<d or b+d<c or d+c<b):
+                print(" üçgen belirtmiyor.")
+                print("Bir üçgenin iki kenarının uzunlukları toplamı üçüncü kenarın uzunluğundan büyük olmalıdır!")
+        elif(n==4):
+            e= float(input("1.kenarı gir: "))
+            f= float(input("1.kenara dik olan kenarı gir: "))
+            g= float(input("2.kenarı gir: "))
+            h= float(input("2.kenara dik olan kenarı gir: "))
+            if (e==f==g==h):
+                print(" kare!")
+            elif (e==g and f==h):
+                print(" dikdörtgen!")
+            elif (e!=f and f!=g and g!=h):
+                print("dörtgen")
+        </p>
+    <h1>İL PLAKA SORGULAMA KODLARI/h1>
+    <p>il={}
+        il["ankara"]="06"
+        il["istanbul"]="34"
+        il["giresun"]="28"
+        il["bursa"]="16"
+        il["rize"]="53"
+        il["eskişehir"]="26"
+        plaka={}
+        plaka["01"]="Adana"
+        plaka["08"]="Artvin"
+        plaka["76"]="ığdır"
+        plaka["37"]="kastamonu"
+        plaka["61,5"]="of"
+        plaka["21"]="diyarbakır"
+        print("-"*10)
+        print("21 plakalı il: ",plaka.get("21"))
+        print("-"*10)
+        print("Eskişehir in il plakası:",il.get("eskişehir")+"dir.")
+        
+        </p>           
+                        
 	</section>
 
 

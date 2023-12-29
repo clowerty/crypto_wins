@@ -150,7 +150,7 @@ def hakkimizda(request):
 			text-align: center;
 			border: 2px solid #7ad4cc;
 			cursor: pointer;
-			color: #fff;
+			color: #16d0c5;
 		}
 
 		.site-btn:hover {
@@ -334,14 +334,14 @@ def hakkimizda(request):
 			font-size: 16px;
 			padding: 10px 5px;
 			margin-right: 30px;
-			color: #fff;
+			color: #16d0c5;
 		}
 
 		/*---------------------
             Hero Section
         -----------------------*/
 
-		.hero-section {background-image: url("https://cdn.discordapp.com/attachments/1099776572988334160/1172918184626622504/hero-bg.png?ex=6562102e&is=654f9b2e&hm=a22249883dab4e9c5070556b91e85a6d2a8d97cd67ffd29569a05732239e6916&");
+		.hero-section {
 			height: 900px;
 			padding-top: 260px;
 			display: block;
@@ -890,7 +890,6 @@ def hakkimizda(request):
 
 		.page-info-section {
 			height: 300px;
-			background-image: url("https://cdn.discordapp.com/attachments/1099776572988334160/1172918183540314152/page-info-bg.png?ex=6562102e&is=654f9b2e&hm=cf1078171f7ed417a3a464deffa3943c5cb061cf02d0c07a1c4f171db089ef37&");
 			background-size: cover;
 			background-color: #f3f7f9;
 			background-position: right top;
@@ -1768,8 +1767,9 @@ def hakkimizda(request):
 			<a href="/kayitol" class="site-btn"   >Giriş Yap</a>
 			<nav class="main-menu">
 				<ul class="menu-list">
-                        <li><a href="/anket" >Anket</a></li>
+                        <li><a href="/anket" >Eğitimlerimiz</a></li>
 					<li><a href="/piyasalar" >Piyasalar</a></li>
+                        
 					<li><a href="/hakkimizda" id="active"  >Hakkımızda</a></li>
 					<li><a href="/sss"  >SSS</a></li>
 					<li><a href="https://view.forms.app/nerimantopcu/iletisim"target="_blank" >İletişim</a></li>
@@ -1777,10 +1777,44 @@ def hakkimizda(request):
 			</nav>
 		</div>
 	</header>
-
 	<section class="hero-section">
-	<h3>efe BURAYI SEN YAPICAKSIN</h3>
-		
+    <div class="about-container">
+                        
+   
+  <b style="color: #7AD4CC;" > <h3 class="about-title" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;   Kripto Sitemize Hoş Geldiniz</b></h3>
+
+        <p class="about-text"; >
+         <div>  <h4 style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;   <span class="site-name">Crypto Wins</span>'e hoş geldiniz! Sitemiz, kripto para dünyasında bilgi sahibi olmak</h4><h4 style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Güncel gelişmeleri takip etmek ve kazançlı yatırım </h4></div><h4 style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  Stratejileri geliştirmek isteyen herkes için tasarlanmış bir kılavuzdur. </div> <h4 style="color: black;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Kripto paraların dinamik dünyasında başarılı olmak için ihtiyacınız olan <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Her şeyi bulabileceğiniz bir platform olarak buradayız.</h4></div>
+        </p>
+
+      <b style="color: #7AD4CC;"> <h3 class="about-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp Misyonumuz ve Vizyonumuz </b></h3>
+        <p class="about-text"; >
+         <div>  <h4 style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;   <span class="site-name">Crypto Wins</span> olarak, kripto paraların yaygın olarak benimsenmesini</h4><h4 style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; kullanıcılarımızın bu alanda başarılı olmalarını hedefliyoruz </h4></div><h4 style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  Misyonumuz, kullanıcılarımıza güvenilir, doğru ve kullanıcı dostu içerikler sunarak </div> <h4 style="color: black;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; kripto para dünyasında bilinçli kararlar almalarına yardımcı olmak <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;finansal hedeflerine ulaşmalarına destek sağlamaktır.</h4></div>
+        </p>
+
+        <!-- Diğer içerikler eklenir -->
+
+       <b style="color: #7AD4CC;"> <h3 class="about-title" text-align>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  Ekip ve Güvenlik </b></h3>
+         <p class="about-text"; >
+         <div>  <h4 style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;   <span class="site-name">Crypto Wins</span> ekibi, kripto paralar konusundaki derin bilgi ve deneyime sahip uzmanlardan oluşur</h4><h4 style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; taahhüdümüzle, kullanıcılarımızın güvenliği ve gizliliği konusundaki endişelerini en üst düzeyde dikkate alırız </h4></div><h4 style="color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  Crypto Wins olarak, sizlere kripto paraların heyecan verici dünyasında güvenilir bir rehberlik sunmaktan mutluluk duyuyoruz. </div> <h4 style="color: black;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  Sorularınız, önerileriniz veya işbirliği talepleriniz için her zaman bizimle iletişime geçebilirsiniz.
+ <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Teşekkür ederiz ve Crypto Wins ile kazançlı bir kripto yolculuğuna hoş geldiniz!</h4></div>
+        </p>
+ <style>
+ .satir-atla {
+white-space: pre-line;
+}
+ </style>
+<body>
+    <div class="satir-atla">
+ Teşekkür ederiz ve Crypto Wins ile kazançlı bir kripto yolculuğuna hoş geldiniz!
+
+ SAYGILARIMIZLA
+
+ CRYPTO WİNS EKİBİ  </div>
+    </div>
+</body>
+        </p>
+    </div>                                                        
 	</section>
 
 
