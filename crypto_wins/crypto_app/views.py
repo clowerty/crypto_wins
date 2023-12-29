@@ -1770,7 +1770,7 @@ def index(request):
 			<a href="/kayitol " class="site-btn">Giriş Yap</a>
 			<nav class="main-menu">
 				<ul class="menu-list">
-                        <li><a href="/anket">Anket</a></li>
+                        <li><a href="/anket">Eğitimlerimiz</a></li>
 					<li><a href="/piyasalar ">Piyasalar</a></li>
 					<li><a href="/hakkimizda ">Hakkımızda</a></li>
 					<li><a href="/sss ">SSS</a></li>
